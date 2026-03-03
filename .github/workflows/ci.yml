@@ -27,3 +27,6 @@ jobs:
     steps:
       - name: Format code
         run: test -z $(go fmt ./...)
+
+      - name: Static Check
+        run: staticcheck ./...
